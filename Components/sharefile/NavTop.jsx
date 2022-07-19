@@ -1,23 +1,19 @@
 import { BsTelephone } from "react-icons/bs";
-import { themeChange } from 'theme-change'
-import { useEffect } from 'react'
 const NavTop = () => {
     const liLinks =
         <>
             <li className="hover:text-primary"><a>My Account</a></li>
             <li className="hover:text-primary"><a>My Wishlist</a></li>
             <li className="hover:text-primary"><a>Checkout</a></li>
-            <div className="flex items-end">
-                <input type="checkbox" className="toggle toggle-md" data-toggle-theme="dark,light" data-act-class="ACTIVECLASS" checked />
+            <div className="flex items-center">
+
+                <input type="checkbox" data-toggle-theme="dark,light" data-act-class="ACTIVECLASS" className="toggle toggle-md" checked />
             </div>
 
 
         </>
 
-    useEffect(() => {
-        themeChange(false)
-        // 👆 false parameter is required for react project
-    }, [])
+    
     return (
         <div className="bg-secondary ">
             {/* top nav bar section  */}
@@ -29,6 +25,7 @@ const NavTop = () => {
                 <div className="flex-none">
                     <ul className="menu menu-horizontal p-0 hidden md:flex ">
                         {liLinks}
+
                     </ul>
 
                     <div className="dropdown dropdown-end block md:hidden">

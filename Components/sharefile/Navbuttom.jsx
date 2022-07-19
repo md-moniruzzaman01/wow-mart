@@ -1,8 +1,8 @@
 import { IoDiamondOutline } from "react-icons/io5";
-
+import Link from "next/link";
 const Navbuttom = () => {
     return (
-        <div className="container flex items-center mx-auto gap-x-4  font-semibold text-xl border-b border-slate-200">
+        <div className="container hidden lg:flex items-center mx-auto gap-x-4  font-semibold text-xl border-b border-slate-200 ">
         <ul className="menu  w-3/12">
             <li>
                 <a>
@@ -14,12 +14,12 @@ const Navbuttom = () => {
         <ul className="menu menu-horizontal  w-6/12">
 
 
-            <li><a>Home</a></li>
-            <li><a>Shop</a></li>
-            <li><a>Product</a></li>
-            <li><a>Blogs</a></li>
-            <li><a>Contact us</a></li>
-            <li><a>About us</a></li>
+            <li> <Link href="/"><a>Home</a></Link> </li>
+            <li><Link href="/shop"><a>Shop</a></Link></li>
+            <li><Link href="/products"><a>Products</a></Link></li>
+            <li><Link href="/blog"><a>Blogs</a></Link></li>
+            <li><Link href="/contact"><a>Contact us</a></Link></li>
+            <li><Link href="/about"><a>About us</a></Link></li>
         </ul>
         <ul className="menu  w-3/12">
             <li><a > <span><IoDiamondOutline/></span> Clearance Up to 30% Off</a></li>

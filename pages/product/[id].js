@@ -51,7 +51,7 @@ const product = ({ data }) => {
 export async function getServerSideProps(context) {
     const { id } = await context.query;
 
-    const res = await fetch(`http://localhost:3000/api/details/${id}`);
+    const res = await fetch(`https://obscure-stream-41015.herokuapp.com/product/${id}`);
     const data = await res.json();
 
     return { props: { data } };

@@ -7,12 +7,16 @@ import NavTop from '../sharefile/NavTop';
 import NavlogoSearch from '../sharefile/NavlogoSearch';
 import Navbuttom from '../sharefile/Navbuttom';
 import Footer from '../sharefile/Footer';
-
+import Head from 'next/head'
 
 const Layout = ({ children }) => {
 
     return (
         <>
+        <Head>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@2.19.1/dist/full.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com" async></script>
+        </Head>
             <div className="drawer drawer-end ">
                 <input id="nav-drower" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content flex flex-col">
@@ -47,7 +51,7 @@ const Layout = ({ children }) => {
                     </ul>
 
                 </div>
-                {/* <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js" async></script> */}
+                <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js" async></script>
             </div>
 
         </>

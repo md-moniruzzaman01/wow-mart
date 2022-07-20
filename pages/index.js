@@ -18,8 +18,6 @@ const flashDeals= data.slice(0, 5)
 const NewArrivels= data.slice(3, 7)
 const Bestseller= data.slice(8, 11)
 const Recommendation= data.slice(4, 14)
-
-
   return (
     <div>
       <Head>
@@ -29,17 +27,13 @@ const Recommendation= data.slice(4, 14)
         <Carosol />
         <div className='bg-accent'>
         <TreindingNavbar />
-        
         </div>
         <Ads1></Ads1>
         <FlashDeals flashDeals={flashDeals}/>
         <NewArrivals NewArrivels={NewArrivels} Bestseller={Bestseller}/>
         <Recommendesion Recommendation={Recommendation}/>
 
-
       </main>
-
-      
     </div>
   )
 }

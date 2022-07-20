@@ -47,7 +47,7 @@ const Layout = ({ children }) => {
                     </ul>
 
                 </div>
-                <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js" async></script>
+                {/* <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js" async></script> */}
             </div>
 
         </>

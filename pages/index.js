@@ -18,7 +18,7 @@ const flashDeals= data.slice(0, 5)
 const NewArrivels= data.slice(3, 7)
 const Bestseller= data.slice(8, 11)
 const Recommendation= data.slice(4, 14)
-console.log(flashDeals);
+
 
   return (
     <div>

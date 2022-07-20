@@ -10,7 +10,7 @@ const product = ({ data }) => {
  
   
    
-    console.log(quantity);
+    
     return (
         <div className={style.detailsSection}>
             <div>

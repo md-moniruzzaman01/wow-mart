@@ -13,7 +13,7 @@ module.exports = {
 
           "secondary": "#202020",
 
-          "accent": "#c96",
+          "accent": "#353c4a",
 
           "neutral": "#D8D6D6",
 
@@ -22,7 +22,7 @@ module.exports = {
           "info": "#777777",
           "success": "#E5E4E2",
 
-          "warning": "rgb(51 65 85)",
+          "warning": "#e1e1e6",
 
           "error": "#F87272",
         },
@@ -34,7 +34,7 @@ module.exports = {
 
           "secondary": "#2A303C",
 
-          "accent": "#1FB2A6",
+          "accent": "rgb(249 250 251)",
 
           "neutral": "#191D24",
 
@@ -45,7 +45,7 @@ module.exports = {
 
           "success": "#E5E4E2",
 
-          "warning": "#FBBD23",
+          "warning": "#0c0c0d",
 
           "error": "#F87272",
         },

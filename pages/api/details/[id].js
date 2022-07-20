@@ -1,6 +1,3 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-
-
 export default async function handler(req, res) {
 
   const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
@@ -8,13 +5,16 @@ export default async function handler(req, res) {
   const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
   await client.connect();
-  const Collection = client.db("wowmart").collection("productIcon");
-  
-  const query = {}
+  const Collection = client.db("wowmart").collection("products");
+  const { id } = req.query
+  const query = { _id: ObjectId(id) }
+console.log(id);
+  const datas = []
 
-  const cursor = await Collection.find(query).toArray()
+
+  const cursor = await Collection.findOne(query);
+  const product = [...datas, cursor]
   res.send(cursor)
   client.close()
-
 
 }

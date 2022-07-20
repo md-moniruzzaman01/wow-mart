@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import { BsArrowRight } from "react-icons/bs";
 const CarosolCard = ({ data }) => {
-    console.log(data);
+
     return (
         <div className='relative'>
             <Image src={data.img} width={1600} height={600} alt="slider image" />

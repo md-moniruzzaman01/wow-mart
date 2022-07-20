@@ -1,7 +1,6 @@
-import React from 'react';
 
-const about = () => {
-    
+
+const contact = () => {
     return (
         <div className='min-h-screen text-3xl flex justify-center items-center'>
             <p>Under Development...............</p>
@@ -9,4 +8,4 @@ const about = () => {
     );
 };
 
-export default about;
+export default contact;

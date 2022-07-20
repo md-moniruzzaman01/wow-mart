@@ -1,11 +1,19 @@
-.headersection img{
+.arraivlsSection{
 
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    min-height: 60vh;
  
 }
 
-/* @media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+@media only screen and (max-width: 600px) {
+    .arraivlsSection{
+
+        
+        grid-template-columns: 1fr;
+        
+     
+    }
   }
-} */
+
+

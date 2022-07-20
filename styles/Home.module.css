@@ -5,7 +5,13 @@
     min-height: 60vh;
  
 }
+.detailsSection{
 
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    
+ 
+}
 @media only screen and (max-width: 600px) {
     .arraivlsSection{
 
@@ -13,6 +19,9 @@
         grid-template-columns: 1fr;
         
      
+    }
+    .detailsSection{
+        grid-template-columns: 1fr;
     }
   }
 

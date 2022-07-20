@@ -13,20 +13,21 @@ const Layout = ({ children }) => {
 
     return (
         <>
-       
-            <div className="drawer drawer-end ">
+            {/* <NavTop />
+            <NavlogoSearch />
+            <Navbuttom /> */}
+            {children}
+            {/* <Footer /> */}
+            {/* <div className="drawer drawer-end ">
                 <input id="nav-drower" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content flex flex-col">
 
-                    <NavTop />
-                    <NavlogoSearch />
-                    <Navbuttom />
-                    {children}
-                    <Footer />
-                </div>
+
+                </div> */}
 
                 {/* drower */}
-                <div className="drawer-side">
+                
+                {/* <div className="drawer-side">
                     <label htmlFor="nav-drower" className="drawer-overlay"></label>
                     <ul className="menu p-4 overflow-y-auto w-80  text-info bg-secondary">
                         <li className="w-full">
@@ -47,9 +48,9 @@ const Layout = ({ children }) => {
 
                     </ul>
 
-                </div>
-                <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js" async></script>
-            </div>
+                </div> */}
+                {/* <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js" async></script> */}
+            {/* </div> */}
 
         </>
     );

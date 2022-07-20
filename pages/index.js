@@ -7,7 +7,7 @@ import FlashDeals from '../Components/Flash Deals/FlashDeals';
 import Carosol from '../Components/Header/Carosol';
 import NewArrivals from '../Components/New Arrivals/NewArrivals';
 import Recommendesion from '../Components/Recommended to you/Recommendesion';
-import Icon from '../Components/Trending product/Icon';
+
 
 import TreindingNavbar from '../Components/Trending product/TreindingNavbar';
 
@@ -29,7 +29,7 @@ const Recommendation= data.slice(4, 14)
         <Carosol />
         <div className='bg-accent'>
         <TreindingNavbar />
-        <Icon />
+        
         </div>
         <Ads1></Ads1>
         <FlashDeals flashDeals={flashDeals}/>

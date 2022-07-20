@@ -1,4 +1,5 @@
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { BsDashLg, BsCheck2Circle, BsStarHalf, BsStarFill } from 'react-icons/bs';
 const BestSellerCard = ({flashDeals}) => {
@@ -16,8 +17,8 @@ const BestSellerCard = ({flashDeals}) => {
     }
     return (
         <div className="bg-base-100 rounded flex justify-between">
-            <div className='w-5/12 flex justify-start items-center mx-auto'>
-                 <img src={picture} alt="" className='h-44 rounded m-2' />
+            <div className='w-5/12 flex justify-start items-center mx-auto py-2'>
+                 <Image src={picture} alt="" height={170} width={170} className='h-44 rounded m-2' />
                   </div>
             <div className='w-7/12'>
             <Link href={`product/${_id}`}><a ><p className='font-semibold text-neutral hover:text-blue-800 hover:underline'>{title}</p></a></Link>

@@ -1,6 +1,7 @@
 
 import { BsDashLg, BsCheck2Circle, BsStarHalf, BsStarFill } from 'react-icons/bs';
 import Link from 'next/link';
+import Image from 'next/image';
 const fleshCard = ({ flashDeals }) => {
     const { picture, title, sells, star,price ,_id} = flashDeals;
     const starCount = star || 3.6
@@ -18,7 +19,7 @@ const fleshCard = ({ flashDeals }) => {
     
     return (
         <div className="bg-base-100 p-2 rounded">
-            <div className='w-full flex justify-center items-center mx-auto'> <img src={picture} alt="" className='w-full rounded' /> </div>
+            <div className='w-full flex justify-center items-center mx-auto'> <Image src={picture} alt="" height={450} width={430} className='w-full rounded' /> </div>
            <Link href={`product/${_id}`}><a ><p className='font-semibold text-neutral hover:text-blue-800 hover:underline'>{title}</p></a></Link>
             <div className='flex justify-between items-center'>
                 <p className="flex text-amber-500">

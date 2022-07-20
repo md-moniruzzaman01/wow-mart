@@ -13,10 +13,7 @@ const Layout = ({ children }) => {
 
     return (
         <>
-        <Head>
-        <link href="https://cdn.jsdelivr.net/npm/daisyui@2.19.1/dist/full.css" rel="stylesheet" type="text/css" />
-        <script src="https://cdn.tailwindcss.com" async></script>
-        </Head>
+       
             <div className="drawer drawer-end ">
                 <input id="nav-drower" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content flex flex-col">

@@ -45,7 +45,7 @@ const Recommendation= data.slice(4, 14)
 }
 
 export async function getServerSideProps(context) {
-  const res = await fetch(`http://localhost:3000/api/product`)
+  const res = await fetch(`https://obscure-stream-41015.herokuapp.com/products`)
   const data = await res.json()
   return {
     props: {data}, 
